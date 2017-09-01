@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/KawoGradlePlugin.iml" filepath="$PROJECT_DIR$/.idea/modules/KawoGradlePlugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kawa/kawa.iml" filepath="$PROJECT_DIR$/.idea/modules/kawa/kawa.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,25 @@
+apply plugin: 'groovy'
+apply plugin: 'com.novoda.bintray-release'
+targetCompatibility = JavaVersion.VERSION_1_7
+sourceCompatibility = JavaVersion.VERSION_1_7
+
+dependencies {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    compile gradleApi()
+    compile localGroovy()
+    compile 'com.android.tools.build:gradle:2.1.2'
+    compile "org.aspectj:aspectjtools:${aspectjVersion}"
+    compile "org.aspectj:aspectjrt:${aspectjVersion}"
+    compile 'com.android.tools.build:transform-api:1.5.0'
+}
+publish {
+    userOrg = 'geamtear'      //bintray注册的用户名
+    groupId = 'com.enation.geamtear.gradle'         //compile引用时的第1部分groupId
+    artifactId = 'kawo'     //compile引用时的第2部分项目名
+    publishVersion = '1.0.3'    //compile引用时的第3部分版本号
+    desc = 'This is KawoGradlePlugin'
+    website = 'https://github.com/YuMengShuaii'
+}
