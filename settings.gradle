@@ -1,1 +1,1 @@
-include ':kawa'
+include ':kawa', ':gradleplugindependencies'

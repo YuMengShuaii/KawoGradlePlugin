@@ -2,12 +2,11 @@ apply plugin: 'groovy'
 apply plugin: 'com.novoda.bintray-release'
 targetCompatibility = JavaVersion.VERSION_1_7
 sourceCompatibility = JavaVersion.VERSION_1_7
-
+repositories {
+    mavenLocal()
+    jcenter()
+}
 dependencies {
-    repositories {
-        mavenLocal()
-        jcenter()
-    }
     compile gradleApi()
     compile localGroovy()
     compile 'com.android.tools.build:gradle:2.1.2'

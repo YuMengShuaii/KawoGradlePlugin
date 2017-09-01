@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KawoGradlePlugin.iml" filepath="$PROJECT_DIR$/.idea/modules/KawoGradlePlugin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/kawa/kawa.iml" filepath="$PROJECT_DIR$/.idea/modules/kawa/kawa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KawoGradlePlugin.iml" filepath="$PROJECT_DIR$/KawoGradlePlugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gradleplugindependencies/gradleplugindependencies.iml" filepath="$PROJECT_DIR$/gradleplugindependencies/gradleplugindependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kawa/kawa.iml" filepath="$PROJECT_DIR$/kawa/kawa.iml" />
     </modules>
   </component>
 </project>
