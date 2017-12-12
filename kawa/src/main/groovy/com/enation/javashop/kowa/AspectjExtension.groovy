@@ -23,23 +23,22 @@ package com.enation.javashop.kowa
  */
 class AspectjExtension {
 
-    List<String> includeJarFilter = new ArrayList<String>()
-    List<String> excludeJarFilter = new ArrayList<String>()
+    List<String> aspectIncludeJarFilter = new ArrayList<String>()
+    List<String> aspectExcludeJarFilter = new ArrayList<String>()
     List<String> ajcArgs=new ArrayList<>();
 
-    public AspectjExtension includeJarFilter(String...filters) {
+    public AspectjExtension aspectIncludeJarFilter(String...filters) {
         if (filters != null) {
-            includeJarFilter.addAll(filters)
+            aspectIncludeJarFilter.addAll(filters)
         }
 
         return this
     }
 
-    public AspectjExtension excludeJarFilter(String...filters) {
+    public AspectjExtension aspectExcludeJarFilter(String...filters) {
         if (filters != null) {
-            excludeJarFilter.addAll(filters)
+            aspectExcludeJarFilter.addAll(filters)
         }
-
         return this
     }
     public AspectjExtension ajcArgs(String...ajcArgs) {

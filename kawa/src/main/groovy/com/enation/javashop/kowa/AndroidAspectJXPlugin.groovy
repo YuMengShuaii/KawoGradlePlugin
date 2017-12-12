@@ -40,7 +40,7 @@ class AndroidAspectJXPlugin implements Plugin<Project> {
             compile 'org.aspectj:aspectjrt:1.8.9'
         }
 
-        project.extensions.create("aspectjx", AspectjExtension)
+        project.extensions.create("kawo", AspectjExtension)
 
         if (project.plugins.hasPlugin(AppPlugin)) {
             //build time trace
