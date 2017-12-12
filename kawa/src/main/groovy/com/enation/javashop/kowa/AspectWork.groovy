@@ -98,7 +98,7 @@ class AspectWork {
             args.add('-Xlint:ignore')
             args.add('-warn:none')
         }
-
+        println Arrays.toString("Args:::"+args)
         MessageHandler handler = new MessageHandler(true);
         Main m = new Main();
         m.run(args as String[], handler);

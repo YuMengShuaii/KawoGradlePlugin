@@ -49,7 +49,7 @@ class AspectTransform extends Transform {
 
     public AspectTransform(Project proj) {
         project = proj
-
+        println("project:"+proj.getName())
         def configuration = new AndroidConfiguration(project)
 
         project.afterEvaluate {
@@ -98,6 +98,7 @@ class AspectTransform extends Transform {
         def hasAjRt = false
         for (TransformInput transformInput : inputs) {
             for (JarInput jarInput : transformInput.jarInputs) {
+                println("Jar:"+jarInput.name)
                 if (jarInput.file.absolutePath.contains(ASPECTJRT)) {
                     hasAjRt = true
                     break
@@ -154,8 +155,8 @@ class AspectTransform extends Transform {
 
         aspectWork.destinationDir = resultDir.absolutePath
 
-        List<String> includeJarFilter = project.aspectjx.includeJarFilter
-        List<String> excludeJarFilter = project.aspectjx.excludeJarFilter
+        List<String> includeJarFilter = project.kawo.aspectIncludeJarFilter
+        List<String> excludeJarFilter = project.kawo.aspectExcludeJarFilter
 
         aspectWork.setAjcArgs(project.aspectjx.ajcArgs);
 
